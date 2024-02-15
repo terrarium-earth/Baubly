@@ -15,7 +15,7 @@
     ],
     "embeds": [
         {
-            "title": "GitHub",
+            "title": "Baubly",
             "description": "**Changelog:**\\n${changelog}",
             "color": 5814783,
             "fields": [
