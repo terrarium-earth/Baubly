@@ -8,9 +8,8 @@
                     "label": "GitHub",
                     "style": 5,
                     "url": "https://github.com/terrarium-earth/Baubly"
-                },
+                }
             ]
-
         }
     ],
     "embeds": [
@@ -33,7 +32,7 @@
             "footer": {
                 "text": "Support us on Discord by becoming a member!",
                 "icon_url": "https://i.imgur.com/3hVj8nM.png"
-            },
+            }
         }
     ],
     "username": "Terrarium Releases",
