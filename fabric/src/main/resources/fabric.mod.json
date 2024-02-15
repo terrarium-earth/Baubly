@@ -1,0 +1,31 @@
+ {
+    "schemaVersion": 1,
+    "id": "baubly",
+    "version": "${version}",
+    "name": "Baubly",
+    "description": "A cross platform wrapper for Trinkets and Curios",
+    "authors": ["CodexAdrian"],
+    "contributors": [""],
+    "contact": {
+        "website": "",
+        "repo": "",
+        "issues": ""
+    },
+    "license": "ARR",
+    "icon": "icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+          "earth.terrarium.baubly.fabric.BaublyFabric::init"
+        ]
+    },
+    "mixins": [
+        "baubly-common.mixins.json",
+        "baubly.mixins.json"
+    ],
+    "depends": {
+        "fabric": "*",
+        "minecraft": ">=1.20",
+        "java": ">=17"
+  }
+}
