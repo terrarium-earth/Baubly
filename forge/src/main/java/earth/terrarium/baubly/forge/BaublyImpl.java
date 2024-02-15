@@ -6,6 +6,6 @@ import top.theillusivec4.curios.api.CuriosApi;
 
 public class BaublyImpl {
     public static void registerBauble(Item item, Bauble bauble) {
-        CuriosApi.registerCurio();
+        CuriosApi.registerCurio(item, new BaublyCuriosWrapper(bauble));
     }
 }

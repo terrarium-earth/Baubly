@@ -1,8 +1,6 @@
 package earth.terrarium.baubly.common;
 
 import com.google.common.collect.Multimap;
-import earth.terrarium.baubly.mixins.LivingEntityAccessor;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ItemStack;
@@ -29,7 +27,7 @@ public interface Bauble {
     }
 
     default void onBreak(ItemStack stack, SlotInfo slot) {
-        ((LivingEntityAccessor) slot.wearer()).invokeBreakItem(stack);
+        slot.wearer().breakItem(stack);
     }
 
     default DropRule getDropRule(ItemStack stack, SlotInfo slot) {

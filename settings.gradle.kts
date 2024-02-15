@@ -1,6 +1,6 @@
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-rootProject.name = "baubly"
+rootProject.name = "Baubly"
 
 pluginManagement {
     repositories {

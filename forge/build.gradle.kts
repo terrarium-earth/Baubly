@@ -2,13 +2,6 @@ architectury {
     forge()
 }
 
-loom {
-    forge {
-        mixinConfig("baubly-common.mixins.json")
-        mixinConfig("baubly.mixins.json")
-    }
-}
-
 val common: Configuration by configurations.creating {
     configurations.compileClasspath.get().extendsFrom(this)
     configurations.runtimeClasspath.get().extendsFrom(this)
