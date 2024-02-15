@@ -26,8 +26,8 @@ subprojects {
     apply(plugin = "com.github.johnrengelman.shadow")
 
     val minecraftVersion: String by project
+    val modId: String by project
     val modLoader = project.name
-    val modId = rootProject.name
     val isCommon = modLoader == rootProject.projects.common.name
 
     base {
