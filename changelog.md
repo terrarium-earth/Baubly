@@ -1,3 +1,3 @@
-# 1.0.1
+# 1.1.0
 
-- Fix broken pack.mcmeta file on Forge
+- Updated to 1.20.4

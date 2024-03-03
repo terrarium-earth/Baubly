@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="baubly"
+version="${version}"
+displayName="Baubly"
+authors="CodexAdrian"
+description='''An api to help with registering Curios baubles.'''
+
+[[dependencies."baubly"]] #optional
+   modId = "neoforge"
+   type="required"
+   versionRange = "[20.4,)"
+   ordering = "NONE"
+   side = "BOTH"
+
+[[dependencies."baubly"]]
+   modId = "minecraft"
+   type="required"
+   versionRange = "[1.20.4,)"
+   ordering = "NONE"
+   side = "BOTH"
