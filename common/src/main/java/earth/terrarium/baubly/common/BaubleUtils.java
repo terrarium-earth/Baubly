@@ -20,7 +20,7 @@ public class BaubleUtils {
     }
 
     @ExpectPlatform
-    public static Container getBaubleContainer(LivingEntity entity, SlotIdentifier identifier) {
+    public static Map<String, Container> getBaubleContainer(LivingEntity entity, SlotIdentifier identifier) {
         throw new NotImplementedException();
     }
 }
