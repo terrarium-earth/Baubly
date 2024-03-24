@@ -26,8 +26,5 @@ dependencies {
     modApi(group = "net.fabricmc.fabric-api", name = "fabric-api", version = "$fabricApiVersion+$minecraftVersion")
 
     modApi(group = "com.terraformersmc", name = "modmenu", version = modMenuVersion)
-    modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-base:5.4.0")
-    modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:5.4.0")
-
     modImplementation(group = "dev.emi", name = "trinkets", version = trinketsVersion)
 }
