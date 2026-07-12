@@ -141,13 +141,12 @@ publishing {
 resourcefulGradle {
     templates {
         register("embed") {
-            val minecraftVersion: String by project
-            val version: String by project
+            val version = project.property("version").toString()
             val changelog: String = file("changelog.md").readText(Charsets.UTF_8)
 
             source.set(file("templates/embed.json.template"))
             injectedValues.set(mapOf(
-                    "minecraft" to minecraftVersion,
+                    "minecraft" to libs.versions.minecraft.get(),
                     "version" to version,
                     "changelog" to StringEscapeUtils.escapeJava(changelog),
             ))
