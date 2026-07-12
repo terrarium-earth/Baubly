@@ -29,6 +29,8 @@ val modID = project.property("modId").toString()
 val modVersion = project.property("version").toString()
 
 cloche {
+    minecraftVersion = libs.versions.minecraft
+
     metadata {
         modId = modID
         name = "Baubly"
@@ -52,7 +54,6 @@ cloche {
 
     fabric {
         loaderVersion = libs.versions.fabric
-        minecraftVersion = libs.versions.minecraft
 
         includedClient()
         runs {
@@ -74,7 +75,6 @@ cloche {
     }
 
     neoforge {
-        minecraftVersion = libs.versions.minecraft
         loaderVersion = libs.versions.neoforge
 
         metadata {
