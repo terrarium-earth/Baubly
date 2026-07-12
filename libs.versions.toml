@@ -1,6 +1,6 @@
 [versions]
 # Cloche
-cloche = "0.19.7" # Cloche
+cloche = "0.19.8" # Cloche
 
 # Minecraft
 minecraft = "1.21.1"
@@ -24,6 +24,9 @@ rei = "16.0.799"
 jei-fabric = "19.38.0.366-fabric"
 jei-neoforge = "19.38.0.366-neoforge"
 
+# IDEA
+annotations = "26.0.2"
+
 [libraries]
 curios = { module = "top.theillusivec4.curios:curios-neoforge", version.ref = "curios" }
 trinkets = { module = "dev.emi:trinkets", version.ref = "trinkets" }
@@ -36,6 +39,8 @@ neoforge-jei = { module = "maven.modrinth:jei", version.ref = "jei-neoforge" }
 
 fabric-cardinalComponents-base = { group = "dev.onyxstudios.cardinal-components-api", name = "cardinal-components-base", version.ref = "cardinal" }
 fabric-cardinalComponents-entity = { group = "dev.onyxstudios.cardinal-components-api", name = "cardinal-components-entity", version.ref = "cardinal" }
+
+annotations = { group = "org.jetbrains", name = "annotations",  version.ref = "annotations" }
 
 [plugins]
 cloche = { id = "earth.terrarium.cloche", version.ref = "cloche" }
