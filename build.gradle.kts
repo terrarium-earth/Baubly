@@ -1,4 +1,7 @@
 @file:Suppress("UnstableApiUsage")
+
+import groovy.json.StringEscapeUtils
+
 plugins {
     java
     id("maven-publish")
@@ -25,12 +28,12 @@ repositories {
     mavenCentral()
 }
 
-val modID = project.property("modId")
-val modVersion = project.property("version")
+val modID = project.property("modId").toString()
+val modVersion = project.property("version").toString()
 
 cloche {
     metadata {
-        modId = "baubly"
+        modId = modID
         name = "Baubly"
         description = "An api to help with registering Curios & Trinkets baubles."
         license = "MIT"
@@ -102,26 +105,23 @@ cloche {
     }
 }
 
-/*
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            artifactId = "$modId-$modLoader-$minecraftVersion"
             from(components["java"])
 
             pom {
-                name.set("Baubly $modLoader")
-                url.set("https://github.com/terrarium-earth/$modId")
+                url.set("https://github.com/terrarium-earth/$modID")
 
                 scm {
-                    connection.set("git:https://github.com/terrarium-earth/$modId.git")
-                    developerConnection.set("git:https://github.com/terrarium-earth/$modId.git")
-                    url.set("https://github.com/terrarium-earth/$modId")
+                    connection.set("git:https://github.com/terrarium-earth/$modID.git")
+                    developerConnection.set("git:https://github.com/terrarium-earth/$modID.git")
+                    url.set("https://github.com/terrarium-earth/$modID")
                 }
 
                 licenses {
                     license {
-                        name.set("ARR")
+                        name.set("MIT")
                     }
                 }
             }
@@ -154,4 +154,3 @@ resourcefulGradle {
         }
     }
 }
-*/
