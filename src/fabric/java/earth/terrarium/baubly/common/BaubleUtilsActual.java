@@ -1,18 +1,16 @@
-package earth.terrarium.baubly.common.fabric;
+package earth.terrarium.baubly.common;
 
 import dev.emi.trinkets.api.TrinketsApi;
-import earth.terrarium.baubly.common.BaubleUtils;
-import earth.terrarium.baubly.common.SlotIdentifier;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.LivingEntity;
-import org.jetbrains.annotations.Nullable;
+import net.msrandom.multiplatform.annotations.Actual;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class BaubleUtilsActual {
 
-    @Nullable
+    @Actual
     public static Container getBaubleContainer(LivingEntity entity, String identifier) {
         String group = identifier.split("/")[0];
         String slot = identifier.split("/")[1];
@@ -24,6 +22,7 @@ public class BaubleUtilsActual {
         return null;
     }
 
+    @Actual
     public static Map<String, Container> getBaubleContainers(LivingEntity entity) {
         var inventory = TrinketsApi.getTrinketComponent(entity).orElse(null);
         Map<String, Container> containers = new HashMap<>();
@@ -39,6 +38,7 @@ public class BaubleUtilsActual {
         return containers;
     }
 
+    @Actual
     public static Map<String, Container> getBaubleContainer(LivingEntity entity, SlotIdentifier identifier) {
         Map<String, Container> map = new HashMap<>();
         for (String id : identifier.trinketIds()) {

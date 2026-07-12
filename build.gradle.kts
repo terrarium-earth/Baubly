@@ -19,12 +19,9 @@ repositories {
     }
     maven(url = "https://central.sonatype.com/artifact")
     maven(url = "https://maven.resourcefulbees.com/repository/maven-public/")
-    maven(url = "https://maven.twelveiterations.com/repository/maven-public/")
     maven(url = "https://maven.ladysnake.org/releases")
     maven(url = "https://maven.terraformersmc.com/")
     maven(url = "https://maven.msrandom.net/repository/root")
-    maven(url = "https://maven.shedaniel.me")
-    maven(url = "https://api.modrinth.com/maven")
     mavenCentral()
 }
 
@@ -71,10 +68,8 @@ cloche {
             fabricApi(libs.versions.fapi)
             modApi.bundle(libs.bundles.cardinalComponents)
             modApi(libs.trinkets)
-            modImplementation(libs.modmenu)
 
-            modCompileOnly(libs.fabric.jei)
-            modCompileOnly(libs.fabric.rei)
+            modLocalRuntime(libs.modmenu)
         }
     }
 
@@ -98,9 +93,6 @@ cloche {
 
         dependencies {
             modApi(libs.curios)
-
-            modCompileOnly(libs.neoforge.jei)
-            modCompileOnly(libs.neoforge.rei)
         }
     }
 }

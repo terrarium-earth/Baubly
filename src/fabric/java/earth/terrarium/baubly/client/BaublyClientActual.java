@@ -1,7 +1,7 @@
-package earth.terrarium.baubly.client.fabric;
+package earth.terrarium.baubly.client;
 
 import dev.emi.trinkets.api.client.TrinketRendererRegistry;
-import earth.terrarium.baubly.client.BaubleRenderer;
+import earth.terrarium.baubly.client.fabric.BaublyTrinketRendererWrapper;
 import net.minecraft.world.item.Item;
 import net.msrandom.multiplatform.annotations.Actual;
 

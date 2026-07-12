@@ -1,7 +1,6 @@
-package earth.terrarium.baubly.common.neoforge;
+package earth.terrarium.baubly.common;
 
-import earth.terrarium.baubly.common.BaubleUtils;
-import earth.terrarium.baubly.common.SlotIdentifier;
+import earth.terrarium.baubly.common.neoforge.WrappedContainer;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.LivingEntity;
 import net.msrandom.multiplatform.annotations.Actual;
